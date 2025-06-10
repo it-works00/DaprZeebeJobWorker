@@ -1,0 +1,6 @@
+@DaprZeebeSample_HostAddress = http://localhost:5056
+
+GET {{DaprZeebeSample_HostAddress}}/
+Accept: application/json
+
+###

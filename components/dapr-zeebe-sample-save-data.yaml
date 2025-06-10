@@ -1,0 +1,16 @@
+﻿apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: dapr-zeebe-sample-save-data
+spec:
+  type: bindings.zeebe.jobworker
+  version: v1
+  metadata:
+    - name: gatewayAddr
+      value: localhost:26500
+    - name: usePlainTextConnection
+      value: true
+    - name: jobType
+      value: dapr-zeebe-sample-save-data
+    - name: workerName
+      value: dapr-zeebe-sample-save-data
